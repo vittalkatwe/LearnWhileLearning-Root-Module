@@ -7,6 +7,7 @@ const RedirectToVittalyes = () => {
                 src="https://vittalyes.netlify.app"
                 style={{ width: '100%', height: '100%', border: 'none' }}
                 title="External Site"
+                allow="geolocation"
             ></iframe>
         </div>
     );
