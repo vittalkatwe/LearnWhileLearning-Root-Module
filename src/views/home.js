@@ -7,6 +7,7 @@ import Announcement from '../components/announcement'
 import Feature from '../components/feature'
 import Footer1 from '../components/footer1'
 import Navbar from '../components/navbar'
+import Review from '../components/review'
 import './home.css'
 
 const Home = (props) => {
@@ -193,7 +194,87 @@ const Home = (props) => {
           ></Feature>
         </div>
       </div>
-      <div className="home-banner-container"></div>
+      <div className="home-banner-container">
+        
+      <section className="home-sectionyo">
+        <header className="home-headeryo">
+          <header className="home-yoyo">
+            <div className="home-container1yo">
+              <div className="home-tagyo">
+                <span className="home-textyo">Feedback</span>
+              </div>
+            </div>
+            <h2 className="home-headingyo section-headingyo">
+              What users say about us
+            </h2>
+          </header>
+          <p className="home-paragraphyo section-description">
+            <span>
+              Message us your feedback on
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: ' ',
+                }}
+              />
+            </span>
+            <a
+              href="https://www.instagram.com/learnwhilelearning"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="home-linkyo"
+            >
+              Instagram
+            </a>
+            <span> to get featured.</span>
+          </p>
+          <div className="home-rightyo"></div>
+        </header>
+        <main className="home-cardsyo">
+          <div className="home-container2yo">
+            <Review
+              rootClassName="review-root-class-name"
+              quote='"I really appreciate your work, you work is really impressive and helps me understand the algorithms of AIML. Great Work, Keep Doing."'
+              author="Nirajan"
+              position="Student"
+            ></Review>
+            <Review
+              quote='"The Website is good, but the UI could be improved, especially the button texts which should show some loaders ideally, as it get ambiguous when the buttons are not displaying proper text."'
+              rootClassName="review-root-class-name"
+              author="Prashant Singh"
+              position="Full Stack Developer"
+            ></Review>
+          </div>
+          <div className="home-container3yo">
+            <Review
+              quote='"Algorithm work without any bugs, and works perfectly. I really like the easy and friendly user interface, easy to access settings, tutorials and area radius."'
+              rootClassName="review-root-class-name"
+              author="Ondrej Viklicky"
+              position="Software Developer"
+            ></Review>
+            <Review
+              quote='"Super Cool. Honestly, I love the animation and having different algorithms. Work on middle points for the path finding visualiser. It&apos;s super good."'
+              rootClassName="review-root-class-name"
+              author="Eilon"
+              position="Tech Enthusiast"
+            ></Review>
+          </div>
+          <div className="home-container4yo">
+            <Review
+              quote='"The Tokyo map is the best in my opinion, as it has got so much branching visualisation."'
+              rootClassName="review-root-class-name"
+              author="Aryan Vijaykumar"
+              position="Artist"
+            ></Review>
+            <Review
+              quote='"UI looks good. Everything looks very user friendly and simple. Design is professional. List methods feature is really cool. I like how its optimised for mobiles. Great Work, I can make something similar for my college project."'
+              rootClassName="review-root-class-name"
+              author="Amay"
+              position="Corporate Employee"
+            ></Review>
+          </div>
+        </main>
+      </section>
+      </div>
       <div className="home-faq">
         <div className="home-content3">
           <div className="home-header2">
@@ -329,6 +410,7 @@ const Home = (props) => {
           </div> */}
         </div>
       </div>
+      
       <Footer1 rootClassName="footer1-root-class-name"></Footer1>
     </div>
   )
