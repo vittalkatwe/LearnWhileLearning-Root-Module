@@ -15,9 +15,9 @@ const Home = (props) => {
     <div className="home-container">
       <Helmet>
         <title>LearnWhileLearning</title>
-        <meta name="description" content="Description of the website" />
+        <meta name="description" content="Bored of the same old DSA videos, try LearnWhileLearning and understand the algorithms using visualisers with ease." />
         <meta property="og:title" content="LearnWhileLearning" />
-        <meta property="og:description" content="Description of the website" />
+        <meta property="og:description" content="LearnWhileLearning is just not another basic DSA website, instead it particularly focuses on DSA and the primary goal is to help users understand the sorting algorithms and path finding algorithms." />
       </Helmet>
       <div className="home-hero">
         <header className="home-heading">
