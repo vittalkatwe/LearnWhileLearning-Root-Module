@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Helmet } from 'react-helmet';
 import './sorting.css';
 
 
@@ -176,6 +177,12 @@ class Sorting extends Component {
     );
 
     return (
+      <Helmet>
+        <title>Sorting Algorithm Visualisation | LearnWhileLearning</title>
+        <meta name="description" content="Sorting Algorithm, don't go with name, in reality it's even more boring but not anymore when you LearnWhileLearning's Sorting Visualiser. The journey gets super easy." />
+        <meta property="og:title" content="Sorting Algorithm Visualisation | LearnWhileLearning" />
+        <meta property="og:description" content="bubble, selection, insertion, heap blah blah blah, there are just so many sorting algorithms. This makes everything confusing and irritating, but this is not the case with LearnWhileLearning's sorting visualiser. The theory part is minimized, the focus is on the working of algorithm which makes it easy to understand the algorithms. " />
+      </Helmet>
       <div className={theme}>
         <TopBar
           drawerOpen={this.state.appDrawerOpen}
