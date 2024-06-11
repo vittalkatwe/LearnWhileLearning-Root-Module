@@ -89,9 +89,9 @@ const List = (props) => {
     <div className="list-container">
       <Helmet>
         <title>List Methods | LearnWhileLearning</title>
-        <meta name="description" content="Description of the website" />
+        <meta name="description" content="List Methods, the most basic functions in DSA, unlike LearnWhileLearning there are no websites that particularly focuses on it. " />
         <meta property="og:title" content="List Methods | LearnWhileLearning" />
-        <meta property="og:description" content="Description of the website" />
+        <meta property="og:description" content="List Methods, is not only a part of DSA but the first step you take in the journey of learning data structures and algorithms, so what are you waiting try LearnWhileLearning's List Method Visualisation right away." />
       </Helmet>
       <div className="list-hero">
         <header className="list-heading">
