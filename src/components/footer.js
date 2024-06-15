@@ -63,6 +63,9 @@ const Footer = (props) => {
             <Link to="/challenges" className="footer-link10">
               {props.link9}
             </Link>
+            <Link to="/privacypolicy" className="footer-link11">
+              {props.link11}
+            </Link>
           </div>
         </div>
       </div>
@@ -82,6 +85,7 @@ Footer.defaultProps = {
   link3: 'Static Website Builder',
   link10: 'Why Us?',
   header1: 'More',
+  link11: 'Privacy Policy',
   pastedImageSrc:
     'https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/4a46e3f6-a2fb-4002-a0ce-bb246bd8698d/99b28711-1d54-4589-9918-a73b8ad8556b?org_if_sml=15394',
   pastedImageAlt: 'pastedImage',
@@ -105,6 +109,7 @@ Footer.propTypes = {
   link10: PropTypes.string,
   text1: PropTypes.string,
   header1: PropTypes.string,
+  link11: PropTypes.string,
   pastedImageSrc: PropTypes.string,
   pastedImageAlt: PropTypes.string,
   link7: PropTypes.string,
