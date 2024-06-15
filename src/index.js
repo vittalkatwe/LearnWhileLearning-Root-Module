@@ -15,6 +15,7 @@ import Future from './views/future'
 import Home from './views/home'
 import List from './views/list'
 import NotFound from './views/not-found'
+import Privacy from './views/privacy'
 import Sorting from './views/sorting'
 import Tandc from './views/tandc'
 
@@ -34,6 +35,7 @@ const App = () => {
         <Route component={About} exact path="/about" />
         <Route component={Future} exact path="/future" />
         <Route component={Tandc} exact path="/tandc" />
+        <Route component={Privacy} exact path="/privacypolicy" />
         <Route component={Home} exact path="/" />
         {/* <Route component={Blog} exact path="/blog" /> */}
         <Route component={RedirectToVittalyes} exact path="/path" />
