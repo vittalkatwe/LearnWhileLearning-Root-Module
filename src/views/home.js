@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef, useState} from 'react'
 import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
@@ -11,8 +11,38 @@ import Review from '../components/review'
 import './home.css'
 
 const Home = (props) => {
+
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const togglePlay = () => {
+    if (videoRef.current.paused) {
+      videoRef.current.play();
+      setIsPlaying(true);
+    } else {
+      videoRef.current.pause();
+      setIsPlaying(false);
+    }
+  };
+
+
   return (
     <div className="home-container">
+      <button className="circle-button" onClick={() => window.open('https://buymeacoffee.com/learnwhilelearning/e/272150', '_blank')}>
+        <svg
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          viewBox="0 0 122.88 101.57"
+        >
+          <g>
+            <path d="M44.97,12.84h-17.2L0,49.37L27.77,85.9h17.2L17.2,49.37L44.97,12.84L44.97,12.84z M77.91,12.84h17.2l27.77,36.53 L95.11,85.9h-17.2l27.77-36.53L77.91,12.84L77.91,12.84z M70.17,0.04l5.96,1.39c0.94,0.22,1.52,1.16,1.31,2.1l-22.5,96.69 c-0.22,0.93-1.16,1.52-2.1,1.31l-5.95-1.39c-0.94-0.22-1.52-1.16-1.31-2.1l22.5-96.69C68.3,0.42,69.24-0.17,70.17,0.04L70.17,0.04 L70.17,0.04z"/>
+          </g>
+        </svg>
+      </button>
+
       <Helmet>
         <title>LearnWhileLearning</title>
         <meta name="description" content="Bored of the same old DSA videos, try LearnWhileLearning and understand the algorithms using visualisers with ease." />
@@ -31,6 +61,7 @@ const Home = (props) => {
           </div>
           <Navbar></Navbar>
         </header>
+        
         <div className="home-content">
           <div className="home-content1">
             <h1 className="home-title">
@@ -108,13 +139,22 @@ const Home = (props) => {
           </div>
           <div className="home-video-container">
             <video
-              src="https://www.youtube.com/watch?v=MRQ69XeDxVk"
+              ref={videoRef}
+              src="/introvideo.mp4"
               loop
-              muted
-              poster="/pastedimage-v2-900w.png"
+              poster="/videocover.png"
               autoPlay
               className="home-video1"
             ></video>
+            <div className="video-controls">
+              <button onClick={togglePlay}>
+                {isPlaying ? (
+                  <span>&#10074;&#10074;</span> // Pause icon (double vertical bars)
+                ) : (
+                  <span>&#9658;</span> // Play icon (right-pointing triangle)
+                )}
+              </button>
+            </div>
             <div className="home-heading-container">
               <div className="home-heading1">
                 <span className="home-text15">
