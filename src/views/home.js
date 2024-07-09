@@ -133,7 +133,6 @@ const Home = (props) => {
               src="/introvideo.mp4"
               loop
               poster="/videocover.png"
-              autoPlay
               className="home-video1"
             ></video>
             <div className="video-controls">
