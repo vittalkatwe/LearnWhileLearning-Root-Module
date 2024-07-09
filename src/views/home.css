@@ -855,8 +855,8 @@
 }
 .home-text11 {
   color: var(--dl-color-gray-700);
-  width: 640px;
-  font-size: 40px;
+  width: 100%;
+  font-size: 32px;
   align-self: center;
   font-style: normal;
   text-align: center;
