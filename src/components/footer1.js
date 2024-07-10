@@ -25,7 +25,7 @@ const Footer1 = (props) => {
             </h2>
             <span className="footer1-text4">
               <span className="">
-                Here are our social media handles, through which you can
+                Here is our mail, through which you can
                 <span
                   dangerouslySetInnerHTML={{
                     __html: ' ',
@@ -34,6 +34,8 @@ const Footer1 = (props) => {
               </span>
               <span className="footer1-text6">reach us</span>
               <span className="footer1-text7">!</span>
+              <br/>
+              (for promotional purpose only)
             </span>
           </div>
           <div className="footer1-hero-buttons">
