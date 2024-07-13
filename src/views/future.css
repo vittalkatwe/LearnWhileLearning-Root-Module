@@ -234,6 +234,7 @@
 }
 @media(max-width: 991px) {
   .future-content {
+    width: 80%;
     gap: var(--dl-space-space-unit);
   }
   .about-get-started {
